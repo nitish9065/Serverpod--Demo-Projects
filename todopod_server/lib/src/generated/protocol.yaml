@@ -1,0 +1,9 @@
+appUser:
+  - updateBio:
+category:
+  - createCategory:
+  - findById:
+  - deleteCategory:
+  - fetchCategoriesByUserId:
+example:
+  - hello:

@@ -1,0 +1,12 @@
+class: AppUser
+table: app_user
+fields:
+  userInfo: module:auth:UserInfo?, relation
+  bio: String
+  createdAt: DateTime
+  updatedAt: DateTime
+  
+indexes:
+  user_info_id_unique_idx:
+    fields: userInfoId
+    unique: true

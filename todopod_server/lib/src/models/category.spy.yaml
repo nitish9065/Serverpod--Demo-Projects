@@ -1,0 +1,11 @@
+class: Category
+table: category
+fields:
+  name : String
+  description : String?
+  createdBy: int, relation(parent=serverpod_user_info)
+  createdAt: DateTime
+indexes:
+  category_model_idx:
+    fields: createdBy, name
+    unique: true

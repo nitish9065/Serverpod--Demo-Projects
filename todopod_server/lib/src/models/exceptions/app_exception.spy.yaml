@@ -1,0 +1,6 @@
+exception: AppException
+fields:
+  readableMessage : String
+  serverMessage: String
+  statusCode: int
+  stackTrace: String?

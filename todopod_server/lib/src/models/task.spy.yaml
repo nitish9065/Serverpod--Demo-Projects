@@ -1,0 +1,13 @@
+class: Task
+table: task
+fields:
+  title: String
+  description: String
+  categoryId: int, relation(parent = category)
+  createdBy: int, relation(parent=serverpod_user_info)
+  createdAt: DateTime
+  updatedAt: DateTime
+indexes:
+  task_model_idx:
+    fields: createdBy, categoryId
+    unique: true
